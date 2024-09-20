@@ -1,0 +1,61 @@
+<html>
+    <body>
+      <p id="get">THALA</p>  
+      <input type="text" name="sample" id="get1" value="chennai">
+      <button type="button" onclick="get1()">get value</button>
+      <div class="example">
+        A div element with class="example"
+        </div>
+        <div class="example">
+        A div element with class="example"
+        </div>
+        <p class="example">
+        A p element with class="example"
+        </p>
+        
+        <p>The number of elements with class="example" is:</p>
+        <p id="demo"></p>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+        
+        <p id="demo1"></p>
+        <p id="demo2" onclick="Function()">Click me.</p>
+
+        <select id="mySelect" onchange="Function()">
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Volvo">Volvo</option>
+        </select>
+      
+        <p id="select"></p>
+        <h1 id="over" onmouseover="mouseOver()">Mouse over me</h1>
+
+    </body>
+</html>
+<script>
+    function get1() {
+        console.log(document.getElementById('get').innerHTML);
+        let name =document.getElementById('get1').value;
+        console.log(name);
+    }
+    let numb = document.getElementsByClassName("example").length;
+console.log(document.getElementById("demo").innerHTML = numb);
+
+const collection = document.getElementsByTagName("li");
+console.log(document.getElementById("demo1").innerHTML = collection.length);
+    
+function myFunction() {
+  document.getElementById("demo2").innerHTML = "YOU CLICKED ME!";
+}
+function Function() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("select").innerHTML = "You selected: " + x;
+}
+function mouseOver() {
+  document.getElementById("over").style.color = "blue";
+}
+</script>

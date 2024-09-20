@@ -1,0 +1,62 @@
+<html>
+<head>
+
+</head>
+    <style>
+        .unameError{
+            border: 2px red solid;
+        }
+        .errorColor{
+            color: red;
+        }
+    </style>
+    <body>
+        <form>
+            <label>User name</label>
+            <input type="text" name="uname" id="uname"/><br>
+            <span id="uError" class="errorColor">Please Enter User Name</span><br>
+            <label>Email</label>
+            <input type="text" name="email" id="email" /><br>
+            <span id="eerror" class="errorColor">Please Enter Email Address</span><br>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+    </body>
+</html>
+<script>
+
+    document.getElementById("uError").style.display = "none"; 
+    document.getElementById("eerror").style.display = "none";
+    function validateEmail(email) {
+    const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return pattern.test(email);
+    }
+
+    function submitForm(){
+        const uname = document.getElementById('uname').value;
+        const email = document.getElementById('email').value;
+
+        if(!uname)
+        {
+            document.getElementById("uname").setAttribute("class", "unameError"); 
+            document.getElementById("uError").style.display = "inline";  
+        }
+        else{
+            document.getElementById("uname").removeAttribute("class", "unameError");  
+            document.getElementById("uError").style.display = "none";  
+        }
+        
+        if(!validateEmail(email))
+        {
+            console.log('test email');
+            document.getElementById("email").setAttribute("class", "unameError");  
+            document.getElementById("eerror").style.display = "inline";  
+        }
+        else{
+            document.getElementById("email").removeAttribute("class", "unameError"); 
+            document.getElementById("eerror").style.display = "none";  
+        }
+
+    }
+
+</script>    

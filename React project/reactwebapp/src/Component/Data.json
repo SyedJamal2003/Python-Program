@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Jamal",
+        "email": "jamal@gmail.com",
+        "phone": "0123456789"
+    },
+
+    {
+        "id": 2,
+        "name": "Rishi",
+        "email": "123@gmail.com",
+        "phone": "123456567"
+    },
+
+    {
+        "id": 2,
+        "name": "Yuvaraj",
+        "email": "456@gmail.com",
+        "phone": "123456234"
+    },
+    {
+        "id": 1,
+        "name": "Barath",
+        "email": "789@gmail.com",
+        "phone": "123456876"
+    }
+]

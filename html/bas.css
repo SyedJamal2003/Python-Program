@@ -1,0 +1,10 @@
+.o{
+            color: rgb(26, 25, 24);
+            margin-left: 50%;
+            padding-left: 50px;
+        }
+.p{
+            color: rgb(17, 13, 138);
+            border: 2px solid rgb(172, 24, 145);
+            padding: 50px;
+        }

@@ -1,0 +1,247 @@
+<html>
+<head>
+
+</head>
+<body>
+
+    <!-- get -->
+    <p id="sampletext">javascript class</p>
+    <input type="text" name="sample" id="getvalue" value="chennai"/>
+    <button type="button" onclick="getvalue()">get value</button>
+    <!-- set -->
+    <p id="settext"></p>
+    <input type="text" name="sample" id="setvalue"/>
+    <button type="button" onclick="setvalue()">set value</button>
+
+</body>
+</html>
+<script>
+
+    function getvalue(){
+        // get
+        console.log(document.getElementById('sampletext').innerHTML);
+        let name =document.getElementById('getvalue').value;
+        console.log(name);
+    }
+
+    function setvalue(){
+       // set
+        document.getElementById('settext').innerHTML='sample set text';
+        document.getElementById('setvalue').value='chennai';
+    }
+
+
+
+    
+    // Events
+//         1.onclick
+//         2.onchange
+//         3.mouseover
+//         4.mouseenter
+
+// Dom access 
+    // 1.using - id 
+    // 2.using - class
+    // 3.using - tag 
+    // 4.using - attr
+
+
+
+// 29-06-24 satureday and sunday task - 
+        // 2.using - class
+        // 3.using - tag 
+        // 4.using - attr
+
+            // Events
+//         1.onclick
+//         2.onchange
+//         3.mouseover
+//         4.mouseenter
+
+// document.getElementById('setValue').innerHTML = 'test';
+
+// document.write(5 + 6);
+
+// alert('test');
+
+// console.log('testt');
+
+
+// function
+
+// 1.define function
+// 2.call function 
+// 3.param or args passing function 
+// 4.default param or args passing function 
+// 5.return function 
+
+
+// function add(x,y=30)  // define function
+// {
+//     // let x = 10;
+//     // let y = 20;
+//     let z = x + y;
+//     console.log(z);
+// }
+
+// add(10,20) // function call
+
+// add(10)
+
+
+// function commonFunction(x,y)
+// {
+//     let z = x + y;
+//     return z;
+// }
+
+
+// res = commonFunction(10,20);
+
+// console.log(res);
+
+
+// 1.data types 
+//     1.int  - 12,3,4
+//     2.float  - 12.33 
+//     3.char - 'A'
+//     4.string - "hello" 
+
+//     String - "hello" or 'A'
+//     Number - 12,3,4 or 12.33
+//     Bigint
+//     Boolean - true or false
+//     Undefined - not defined varibale or functions
+//     Null - value empty
+//     Symbol  
+//     Object - {'name':'vignesh','age':30}
+
+// 2.operators
+//     1.arthmatic op - + , - , * ,/
+//     2.logical op - && , || , !
+//     3.conditional op - <,<=,>,>=,==,===,!=
+//     4.assignemnt op - = , +=,-=,*=
+//     5.bitwise op - & , |
+
+
+// 3.variables 
+
+//     1.declaration
+//         let x;
+//     2.initilization
+//         let x=10;
+
+//     1.var  -  2015
+//     2.let  - 16
+//     3.const -16
+
+
+// var - not block scope
+
+// var x=10;
+// var x=20;
+// {
+//     var x=20
+// }
+// console.log(x); // 20
+
+
+// let - block scope
+
+// let x=10
+// {
+//     let x=20
+// }
+// console.log(x); // 10
+
+// const - constant 
+
+// const x=20;
+
+// {
+//     const x=20;
+// }
+
+
+// function addtion(){
+//     let x=20;
+//     let y=30;
+//     let z = x+y;
+//     return z;
+// }
+// let res = addtion();
+// console.log(res);
+
+
+// objects 
+
+const car = {type:"Fiat", model:"500", color:"white"};
+
+console.log(car.type);
+console.log(car['type']);
+
+const arr = [1,2,3,4,5,6]
+
+// loops
+
+// 1.for 
+// 2.for in
+// 3.for of
+// 4.foreach
+// 5.map 
+// // 6.filter
+// // 7.find
+// 8.while
+// 9.do while 
+// 10.break / continue
+
+
+for(let xx =0; xx<10; xx++)
+{
+    console.log(xx);
+    if(xx === 5)
+    {
+        continue;
+    }
+} 
+
+for(let x of arr){
+    console.log(x);
+}
+
+for(let x in car)
+{
+    console.log(x);
+}
+
+// o/p 
+
+arr.forEach((value)=>{
+    console.log(value)
+});
+
+Object.entries(car).forEach((item,index)=>{
+    console.log(item,index)
+});
+
+
+let x=0;
+
+while(x<10)
+{
+    console.log(x);
+
+    x=x+1
+}
+
+
+let zz =10;
+
+do{
+console.log(zz)
+}
+while(zz > 200);
+</script>
+
+
+
